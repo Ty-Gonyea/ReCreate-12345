@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Source Sans Pro;
+  }
+  
+  #sidebar {
+    position: absolute;
+    margin: 0;
+    width: 300px;
+    height: 100%;
+    background: rgb(255,255,255);
+    left: -300px;
+    transition: .4s;
+  }
+  
+  #sidebar.active {
+    left: 0;
+  }
+  
+  #sidebar{
+    list-style-type: none;
+    color: #fb8b24;
+    font-size: 20px;
+    padding:35px 0px;
+  }
+  
+  #sidebar .toggle-btn {
+    position: absolute;
+    top: 40px;
+    left: 350px;
+  }
+  
+  .toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: rgb(0,0,0);
+    display: block;
+    margin-top: 4px;
+  }
+ 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255,255,255);
+  }
+   
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(80,80,80);
+    text-align: center;
+    padding: 40px 50px;
+    text-decoration: none;
+  }
+  
+  #sidebar a:hover {
+    color: #E56542;
+  }
+
+  .topbar {
+    background-color: rgb(255,255,255);
+    padding: 10px;
+    width: 100%;
+  }
+    
+ .topbar a{
+   float: left;
+   padding: 16px;
+  }
+
+ .topbar-right {
+  float: right;
+  } 
+
+  .topbar-center a {
+    float: none;
+    position: absolute;
+    top: -7px; 
+    left: 525px;
+  }
+
+  .main picture {
+    position: relative;
+    text-align: center;
+  }
+  
+
+  .centered {
+    position: absolute;
+    font-size: 55px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .image {
+    opacity: .75;
+  }
+
+  .image:hover {
+    opacity: 1;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    padding: 20px 0;
+  }
+
+  .pasta {
+    padding: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
+  }
+
+ .Boxed {
+   width:  250px;
+   height: 75px;
+   border: 1px solid green;
+   padding: 37px;
+   margin: 320px;
+   
+ }
+    
