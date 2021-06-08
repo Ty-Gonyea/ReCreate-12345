@@ -42,7 +42,7 @@
     margin-top: 4px;
   }
  
-  ul {
+    ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,11 +50,11 @@
     background-color: rgb(255,255,255);
   }
    
-  li {
+    li {
     float: left;
   }
   
-  li a {
+    li a {
     display: block;
     color: rgb(80,80,80);
     text-align: center;
@@ -114,13 +114,11 @@
 
   .grid-container {
     display: grid;
-    grid-template: auto auto;
+    grid-template-columns: auto auto;
     grid-gap: 10px;
     padding: 10px;
-  }
-  
-  .grid-container > div {
-    padding: 20px 0;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 25px;
   }
 
   .pasta {
@@ -133,11 +131,21 @@
   }
 
  .Boxed {
-   width:  250px;
+   background-color: rgb(255,255,255);
+   position: relative;
+   width:  300px;
    height: 75px;
    border: 1px solid green;
-   padding: 37px;
-   margin: 320px;
+   padding: 75px;
+   margin: 35px;
+   left: 375px;
+   bottom: 150px;
+  
    
  }
-    
+ .grid-box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #ef412a;
+  color: rgb(255,255,255);
+}
